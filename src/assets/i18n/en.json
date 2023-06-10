@@ -1,0 +1,14 @@
+{
+    "OPTIONS_MENU": {
+        "DASHBOARD": "Dashboard",
+        "NOTES": "Notes",
+        "DOWNLOADS": "Downloads",
+        "SELECT_LANGUAGE": "Select the language"
+    },
+    
+    "OPTIONS_LANGUAGES": {
+        "SPANISH": "Spanish",
+        "ENGLISH": "English",
+        "PORTUGUESE": "Portuguese"
+    }
+}

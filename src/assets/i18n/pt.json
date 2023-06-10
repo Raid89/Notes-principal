@@ -1,0 +1,13 @@
+{
+    "OPTIONS_MENU": {
+        "DASHBOARD": "Painel principal",
+        "NOTES": "Notas",
+        "DOWNLOADS": "Baixar",
+        "SELECT_LANGUAGE": "Selecione o idioma"
+    },
+    "OPTIONS_LANGUAGES": {
+        "SPANISH": "Espanhol",
+        "ENGLISH": "Inglês",
+        "PORTUGUESE": "Português"
+    }
+}

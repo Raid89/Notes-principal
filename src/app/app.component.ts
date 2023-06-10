@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'notes-app';
+
+  constructor(private translateService: TranslateService) {
+    this.translateService.setDefaultLang('en'); // Establece el idioma predeterminado
+  }
 }

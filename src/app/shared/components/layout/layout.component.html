@@ -1,0 +1,24 @@
+<div class="container flex flex-row">
+  <div class="sidebar">
+    <img src="assets/images/brain_logo.png" alt="">
+    <div class="options">
+      <ng-container *ngFor="let item of optionsMenu; let i = index">
+        <i 
+        [ngClass]="{'select': item.selected}" 
+        [class]="item.icon" 
+        [routerLink]="item.link"
+        (click)="changeSelection(i)"
+        matTooltip="{{ item.description | translate}}"
+        matTooltipPosition="right"></i>
+      </ng-container>
+      
+    </div>
+    <div>
+      <app-language-selector></app-language-selector>
+    </div>
+  </div>
+  <div class="content">
+    <!-- Contenido principal -->
+    <router-outlet></router-outlet>
+  </div>
+</div>

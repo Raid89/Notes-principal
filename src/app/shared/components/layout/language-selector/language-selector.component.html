@@ -1,0 +1,20 @@
+<div class="container__language_selector">
+   <img [src]="languageOptions[languageSelected].icon" 
+        class="selected__language_selector"
+        (click)="viewListLanguage = !viewListLanguage"
+        (clickOutside)="viewListLanguage = false"
+        matTooltip="{{ 'OPTIONS_MENU.SELECT_LANGUAGE' | translate }}"
+        matTooltipPosition="right">
+
+   <div class="list_language_selector" 
+        [ngStyle]="{ height: viewListLanguage === false ? '0px' : '100px'}">
+        <ul> 
+            <li *ngFor="let item of languageOptions; let i = index">
+               <img [src]="item.icon" alt=""
+                    matTooltip="{{ item.description | translate}}"
+                    matTooltipPosition="right"
+                    (click)="changeLanguage(item.key, i)">
+            </li>
+        </ul>
+   </div>
+</div>
